@@ -34,7 +34,7 @@ const Header = () => {
         <p className='my-6 sm:my-8 max-w-2xl m-auto max-sm:text-xs text-gray-500 dark:text-text-secondary-dark'>This is your space to think out loud, to share what matters, and to write without filters. whether it's one word or a thousand, your story starts right here.</p>
 
         <form className='flex justify-between max-w-lg max-sm:scale-75 mx-auto text-gray-500 border border-gray-300 bg-white rounded overflow-hidden dark:bg-bg-secondary-dark' onSubmit={onSubmitHandler}>
-          <input className='w-full pl-4 outline-none dark:text-text-primary-dark' type="text" placeholder='Search for blogs' required ref={inputRef} />
+          <input className='w-full pl-4 outline-none text-gray-400' type="text" placeholder='Search for blogs' required ref={inputRef} />
           <button className='bg-primary text-white px-8 py-2 m-1.5 rounded hover:scale-105 transition-all cursor-pointer' type='submit'>Search</button>
         </form>
 

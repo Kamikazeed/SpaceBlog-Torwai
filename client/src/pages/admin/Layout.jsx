@@ -36,7 +36,7 @@ const Layout = () => {
           <button className='flex items-center cursor-pointer' onClick={() => toggleTheme()}>
             <img className='h-6 w-6 sm:h-7 sm:w-7' src={theme === 'dark' ? assets.moon_icon : assets.sun_icon} alt="mode_icon"/>
           </button>
-          <button className='text-sm px-8 py-2 bg-primary text-white rounded-full cursor-pointer' onClick={Logout}>Logout</button>
+          <button className='text-sm px-6 py-2 bg-primary text-white rounded-full cursor-pointer' onClick={Logout}>Logout</button>
         </div>
       </div>
 

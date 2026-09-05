@@ -57,12 +57,16 @@ const CommentTableItem = ({comment, fetchComments}) => {
         {BlogDate.toLocaleDateString()}
       </td>
       <td className='px-6 py-4'>
-        <div className='inline-flex items-center gap-4'>
-          {!comment.isApproved ? 
-          <img className='w-5 hover:scale-110 transtion-all cursor-pointer' onClick={approveComment} src={assets.tick_icon} alt='tick_icon' loading='lazy'/> :
-          <p className='text-xs border border-green-600 bg-green-100 text-green-600 rounded-full px-3 py-1'>Approved</p>
-          }
-          <img className='w-8 sm:w-6 hover:scale-110 transition-all cursor-pointer' onClick={deleteComment} src={assets.bin_icon} alt='bin_icon' loading='lazy'/>
+        <div className='inline-flex flex-col items-end gap-3'>
+          <button className='flex items-center px-4 py-2 rounded bg-text-secondary-dark/70 cursor-pointer dark:bg-bg-secondary-dark'>
+            {!comment.isApproved ? 
+            <img className='w-5 hover:scale-110 transtion-all cursor-pointer' onClick={approveComment} src={assets.tick_icon} alt='tick_icon' loading='lazy'/> :
+            <p className='text-xs text-green-600 rounded-full'>Approved</p>
+            }
+          </button>
+          <button className='flex items-center px-2 py-1 rounded bg-text-secondary-dark/70 cursor-pointer dark:bg-bg-secondary-dark'>
+            <img className='w-6 sm:w-8 hover:scale-110 transition-all cursor-pointer' onClick={deleteComment} src={assets.bin_icon} alt='bin_icon' loading='lazy'/>
+          </button>
         </div>
       </td>
     </tr>

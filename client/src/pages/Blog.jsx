@@ -103,8 +103,8 @@ const Blog = () => {
         <div className='max-w-3xl mx-auto'>
           <p className='font-semibold mb-4 dark:text-text-primary-dark'>Add your comment</p>
           <form className='flex flex-col items-start gap-4 max-w-lg' onSubmit={addComment} >
-            <input onChange={(e) => setName(e.target.value)} value={name} className='w-full p-2 border border-gray-300 rounded outline-none dark:text-text-secondary-dark' type="text" placeholder='name' required />
-            <textarea onChange={(e) => setContent(e.target.value)} value={content} className='w-full p-2 border border-gray-300 rounded outline-none h-48 dark:text-text-secondary-dark' required placeholder='Comment'></textarea>
+            <input onChange={(e) => setName(e.target.value)} value={name} className='w-full p-2 border border-gray-300 rounded outline-none text-gray-400' type="text" placeholder='name' required />
+            <textarea onChange={(e) => setContent(e.target.value)} value={content} className='w-full p-2 border border-gray-300 rounded outline-none h-48 text-gray-400' required placeholder='Comment'></textarea>
             <button className='bg-primary text-white rounded p-2 px-8 hover:scale-102 transition-all cursor-pointer' type='submit'>Submit</button>
           </form>
         </div>
@@ -113,14 +113,14 @@ const Blog = () => {
         <div className='my-24 max-w-3xl mx-auto'>
           <p className='font-semibold my-4 dark:text-text-primary-dark'>Share this article on social media</p>
           <div className='flex gap-2'>
-            <button className='p-2 flex items-center justify-center rounded-full shadow-lg hover:shadow-primary'>
-              <img className='w-6 h-6 cursor-pointer' src={assets.facebook_icon} alt='facebook_icon' loading='lazy'/>
+            <button className='p-2 flex items-center justify-center rounded-full cursor-pointer shadow-lg hover:shadow-primary'>
+              <img className='w-6 h-6' src={assets.facebook_icon} alt='facebook_icon' loading='lazy'/>
             </button>
-            <button className='p-2 flex items-center justify-center rounded-full shadow-lg hover:shadow-primary'>
-              <img className='w-6 h-6 cursor-pointer' src={assets.twitter_icon} alt='twitter_icon' loading='lazy'/>
+            <button className='p-2 flex items-center justify-center rounded-full cursor-pointer shadow-lg hover:shadow-primary'>
+              <img className='w-6 h-6' src={assets.twitter_icon} alt='twitter_icon' loading='lazy'/>
             </button>
-            <button className='p-2 flex items-center justify-center rounded-full shadow-lg hover:shadow-primary'>
-              <img className='w-6 h-6 cursor-pointer' src={assets.googleplus_icon} alt='googleplus_icon' loading='lazy'/>
+            <button className='p-2 flex items-center justify-center rounded-full cursor-pointer shadow-lg hover:shadow-primary'>
+              <img className='w-6 h-6' src={assets.googleplus_icon} alt='googleplus_icon' loading='lazy'/>
             </button>
           </div>
         </div>

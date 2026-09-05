@@ -21,7 +21,7 @@ const BlogList = () => {
       <div className='flex justify-center gap-4 sm:gap-8 my-10 relative'>
         {blogCategories.map ((item) => ( 
           <div className='relative' key={item}>
-            <button className={`cursor-pointer text-gray-500 dark:text-text-secondary-dark/70 ${menu === item && 'text-white dark:text-white px-4 pt-0.5' }`} onClick={() => setMenu(item)}>
+            <button className={`cursor-pointer text-gray-500 dark:text-text-secondary-dark/70 text-sm md:text-md ${menu === item && 'text-white dark:text-white px-4 pt-0.5' }`} onClick={() => setMenu(item)}>
               {item}
               {menu === item && (
                 <motion.div 
