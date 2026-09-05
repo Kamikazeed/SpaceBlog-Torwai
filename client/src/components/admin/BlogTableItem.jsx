@@ -50,11 +50,13 @@ const BlogTableItem = ({blog, fetchBlogs, index}) => {
       <td className='px-2 py-4 max-sm:hidden'>
         <p className={`${blog.isPublished ? 'text-green-600' : 'text-orange-700'}`}>{blog.isPublished ? 'Published' : 'Unpublished'}</p>
       </td>
-      <td className='px-2 py-4 flex items-center text-xs gap-3'>
-        <button className='border px-2 py-0.5 mt-1 rounded cursor-pointer' onClick={togglePublish}>{blog.isPublished ? 'Unpublish' : 'Publish'}</button>
-        <button className='flex items-center p-2 bg-text-secondary-dark/70 rounded-full cursor-pointer dark:bg-bg-secondary-dark'>
-          <img className='w-5 hover:scale-110 transition-all' onClick={deleteBlog} src={assets.cross_icon} alt='cross_icon' loading='lazy'/>
-        </button>
+      <td className='px-2 py-4 text-xs'>
+        <div className='flex flex-col items-end gap-3'>
+          <button className='border px-2 py-1 rounded cursor-pointer' onClick={togglePublish}>{blog.isPublished ? 'Unpublish' : 'Publish'}</button>
+          <button className='flex items-center px-4 py-1 rounded bg-text-secondary-dark/70 cursor-pointer dark:bg-bg-secondary-dark'>
+            <img className='w-4 h-4 transition-transform duration-300 hover:scale-110' onClick={deleteBlog} src={assets.cross_icon} alt='cross_icon' loading='lazy'/>
+          </button>
+        </div>
       </td>
     </tr>
   )

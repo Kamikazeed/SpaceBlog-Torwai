@@ -15,6 +15,8 @@ import cross_icon from './cross_icon.svg'
 import home_icon from './home_icon.svg'
 import sun_icon from './sun_icon.svg'
 import moon_icon from './moon_icon.svg'
+import github from './github.svg'
+import portfolio from './portfolio.svg'
 import gradientBackground from './gradientBackground.webp'
 import dashboard_icon_1 from './dashboard_icon_1.svg'
 import dashboard_icon_2 from './dashboard_icon_2.svg'
@@ -49,16 +51,22 @@ export const assets = {
 export const blogCategories = ['All', 'Technology', 'Startup', 'Lifestyle', 'Finance']
 
 export const footer_data = [
-    {
-        title: "Quick Links",
-        links: ["Home", "Best Sellers", "Offers & Deals", "Contact Us", "FAQs"]
-    },
-    {
-        title: "Need Help?",
-        links: ["Delivery Information", "Return & Refund Policy", "Payment Methods", "Track your Order", "Contact Us"]
-    },
-    {
-        title: "Follow Us",
-        links: ["Instagram", "Twitter", "Facebook", "YouTube"]
-    }
+  {
+    icon: logo,
+    title: "SpaceBlog",
+    link: '/',
+    target: '_self',
+  },
+  {
+    icon: portfolio,
+    title: "Portfolio",
+    link: 'https://torwai-portfolio.vercel.app',
+    target: '_black',
+  },
+  {
+    icon: github,
+    title: "GitHub",
+    link: 'https://github.com/Kamikazeed',
+    target: '_black',
+  }
 ];
